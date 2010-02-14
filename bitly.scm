@@ -126,7 +126,7 @@
         ((equal? sym *stats*)
          (parse-xml (get-bitly-xml path (make-param *shortUrl*))
                            '(bitly)))
-        ;((equal? sym *errors*) (parse-xml (get-bitly-xml path dummy) '()))
+        ;((equal? sym *errors*) (parse-xml (get-bitly-xml path "") '()))
         (else (error "api error"))))
 
 (provide "bitly")
