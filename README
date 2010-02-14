@@ -16,7 +16,7 @@ SYNOPSIS
     (define bc (make-bitly username apikey "http://www.google.com"))
     ;;or (define bc (make-bitly username apikey))
     
-    (shorten bc) ; default url is (ref bc 'url). "http://www.google.com" => "http://bit.ly/c2bi9W"    
+    (shorten bc) ; default url is (ref bc 'url).    
     
     (shorten bc "http://www.google.com")
     (expand bc "http://bit.ly/c2bi9W")
