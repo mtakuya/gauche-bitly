@@ -1,0 +1,26 @@
+NAME
+    This is Gauche module bitly.
+ 
+VERSION
+    0.0.1
+ 
+INSTALLATION
+    1. bitly.scm add copy to *load-path* directory.
+ 
+SYNOPSIS
+    (use bitly)
+    (define username "YOURUSERNAME")
+    (define apikey "YOURAPIKEY")
+    
+    ;initialize
+    (define bc (make-bitly username apikey "http://www.google.com"))
+    ;;or (define bc (make-bitly username apikey))
+    
+    (shorten bc) ; default url is (ref bc 'url). "http://www.google.com" => "http://bit.ly/c2bi9W"    
+    
+    (shorten bc "http://www.google.com")
+    (expand bc "http://bit.ly/c2bi9W")
+    ;info, stats
+    
+AUTHOR
+    Takuya Mannami <mtakuya@users.sourceforge.jp>
